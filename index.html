@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devedores</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Dashboard</h1>
+    <main>
+
+        <section>
+            <h2>Listagem de amigos</h2>
+            <div class="listagem">
+                <div class="tabela">
+                    <div class="titulo">
+                        <p class="nome">Nome</p>
+                        <p class="email">Email</p>
+                        <p class="genero">Gênero</p>
+                        <p class="descricao">Descrição</p>
+                        <p class="editar">Editar</p>
+                        <p class="deletar">Deletar</p>
+                    </div>
+
+                    <div class="scroll">
+                        <div class="conteudo">
+                            <p class="nome">Caio Bruno</p>
+                            <p class="email">Caiobrunopittaf@gmail.com</p>
+                            <p class="genero">Masculino</p>
+                            <p class="descricao">Sou D+</p>
+                            <p class="editar"><button class="btn-editar">✏️</button></p>
+                            <p class="deletar"><button class="btn-deletar">🗑️</button>
+                            </p>
+                        </div>
+                        <div class="conteudo">
+                            <p class="nome">DarkSouls</p>
+                            <p class="email">DarkSoulsMelhor@gmail.com</p>
+                            <p class="genero">Feminino</p>
+                            <p class="descricao">Elden Ring vai sair</p>
+                             <p class="editar"><button class="btn-editar" >✏️</button></p>
+                            <p class="deletar">🗑️</p>
+                        </div>
+                        <div class="conteudo">
+                            <p class="nome">Vitor</p>
+                            <p class="email">vitorm2000@hotmail.com</p>
+                            <p class="genero">Masculino</p>
+                            <p class="descricao">Bom de mais no valorant</p>
+                             <p class="editar"><button class="btn-editar" >✏️</button></p>
+                            <p class="deletar">🗑️</p>
+                        </div>
+                        <div class="conteudo">
+                            <p class="nome">Vitor</p>
+                            <p class="email">vitorm2000@hotmail.com</p>
+                            <p class="genero">Masculino</p>
+                            <p class="descricao">Bom de mais no valorant</p>
+                             <p class="editar"><button class="btn-editar" >✏️</button></p>
+                            <p class="deletar">🗑️</p>
+                        </div>
+                        <div class="conteudo">
+                            <p class="nome">Vitor</p>
+                            <p class="email">vitorm2000@hotmail.com</p>
+                            <p class="genero">Masculino</p>
+                            <p class="descricao">Bom de mais no valorant</p>
+                             <p class="editar"><button class="btn-editar" >✏️</button></p>
+                            <p class="deletar">🗑️</p>
+                        </div>
+                        <div class="conteudo">
+                            <p class="nome">Vitor</p>
+                            <p class="email">vitorm2000@hotmail.com</p>
+                            <p class="genero">Masculino</p>
+                            <p class="descricao">Bom de mais no valorant</p>
+                             <p class="editar"><button class="btn-editar" >✏️</button></p>
+                            <p class="deletar">🗑️</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="form1">
+                    <label for="fname">Nome<span>*</span></label>
+                    <input type="text" class="entrada" name="fname"><br>
+                    <span><p>Campo obrigratório</p></span><br>
+                    <label for="femail">Email <span>*</span></label>
+                    <input type="text" class="entrada" name="femail"><br>
+                    <label for="fgenero">Gênero<span>*</span></label>
+                    <select name="fgenero">
+                        <option value="fem" selected></option>
+                        <option value="fem">Feminino</option>
+                        <option value="mas">Masculino</option>
+                        <option value="outro">Outro</option>
+                    </select><br>
+                    <label for="fdescricao">Descrição<span>*</span></label>
+                    <input type="text" class="entrada" name="fdescricao">
+                    <input type="submit" class="botao" value="Cadastrar">
+                </form>
+            </div>
+        </section>
+
+        <div id="dv-modal" class="modal">
+            <div class="modalCaixa">
+                <h3>Editar os dados de Caio Bruno</h3>
+                <form action="" class="form2">
+                    <div class="linha">
+                        <div class="coluna">
+                            <label for="fname" class="labelModal">Nome</label>
+                            <input type="text" class="entradaModal" name="fname">
+                        </div>
+                        <div class="coluna">
+                            <label for="fdescricao" class="labelModal">Descrição</label>
+                            <input type="text" class="entradaModal" name="fdescricao">
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="coluna">
+                            <label for="femail" class="labelModal">Email</label>
+                            <input type="text" class="entradaModal" name="femail"><br>
+                        </div>
+                        <div class="coluna">
+                            <label for="fgenero">Gênero</label>
+                            <select name="fgenero">
+                                <option value="fem" selected></option>
+                                <option value="fem">Feminino</option>
+                                <option value="mas">Masculino</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="submit" class="botaoModal" value="Alterar Dados">
+                    <button class="btn-fechar">X</button>
+                </form>
+
+            </div>
+
+        </div>
+        <div id="dd-modal" class="modal modal2">
+            <div>
+                <h3 class="h3-modal">Tem certeza que deseja excluir o amigo maconheiro(Lázaro)?</h3>
+                <div class="botoes">
+                    <input type="submit" class="botaoModal2" value="Excluir">
+                    <button class="cancelar btn-fechar">Cancelar</button>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+    </main>
+
+</body>
+
+</html>
